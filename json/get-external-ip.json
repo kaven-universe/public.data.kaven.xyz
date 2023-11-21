@@ -1,0 +1,28 @@
+[
+    {
+        "url": "https://ip.kaven.xyz/"
+    },
+    {
+        "url": "https://qifu-api.baidubce.com/ip/local/geo/v1/district",
+        "type": "IPv4",
+        "regex": {
+            "pattern": "\"ip\"\\s*:\\s*\"([^\"]+)\"",
+            "flags": ""
+        }
+    },
+    {
+        "url": "https://qifu-api.baidubce.com/ip/local/geo/v1/district"
+    },
+    {
+        "url": "https://ipinfo.io/"
+    },
+    {
+        "url": "http://checkip.dyndns.com/"
+    },
+    {
+        "url": "https://ipv4.icanhazip.com/"
+    },
+    {
+        "url": "https://api.ipify.org/"
+    }
+]
