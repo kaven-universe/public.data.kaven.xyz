@@ -16,5 +16,17 @@
     },
     {
         "url": "https://api.ipify.org/"
+    },
+    {
+        "url": "http://ip-api.com/json/"
+    },
+    {
+        "url": "https://api.ip.sb/geoip"
+    },
+    {
+        "url": "http://whois.pconline.com.cn/ipJson.jsp"
+    },
+    {
+        "url": "https://2023.ip138.com/"
     }
 ]
