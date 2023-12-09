@@ -1,12 +1,6 @@
 [
     {
-        "url": "https://qifu-api.baidubce.com/ip/local/geo/v1/district",
-        "type": "IPv4",
-        "regex": {
-            "pattern": "\"ip\"\\s*:\\s*\"([^\"]+)\"",
-            "flags": "",
-            "resultIndex": 1
-        }
+        "url": "https://ip.kaven.xyz/"
     },
     {
         "url": "http://checkip.dyndns.com/"
