@@ -1,9 +1,3 @@
 # public.data.kaven.xyz
 
-## Mirror
-
-```sh
-git remote add github git@github.com:kaven-universe/public.data.kaven.xyz.git
-git remote -v
-git push github --mirror
-```
+A static repository for hosting public datasets and files for public.data.kaven.xyz.
