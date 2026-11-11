@@ -1,11 +1,11 @@
 {
-    "version": "0.1.0",
-    "notes": "Initial Kaven Git release.",
-    "pub_date": "2026-11-06T02:49:58Z",
+    "version": "0.1.1",
+    "notes": "Adds signed automatic updates.",
+    "pub_date": "2026-11-11T06:41:49Z",
     "platforms": {
-        "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSlFaMmdhUElxWk9Eeng1TTVBd0tCamwxMXlhN1hOejRPL01sUmpaV043RjZLZ1o0UEpZWDV4NCt2UEI5Q1hqbDVxSkZlTGhqNENiR3drbVp5R0UwTndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzY2MDg2CWZpbGU6S2F2ZW4gR2l0XzAuMS4wX3g2NF9lbi1VUy5tc2kJdmVyc2lvbjowLjEuMAozZ2tjaUR6UzFKa2lqSU5RVEYwa1dUWnhpM05rTlNObUFrVWtla3U1TXMwcnRNK1dUeW91QXl5T2MvZ3BVdDB2czNRQVFURktoMmllSVY2N2NvdHFBQT09Cg==",
-            "url": "https://kaven.xyz:5558/hfs/pub/setup/Kaven-Git/0.1.0/Kaven%20Git_0.1.0_x64_en-US.msi"
+        "windows-x86_64-nsis": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSlN6K2pwTnpUdGFCS2hsdXI2cTVTdEtSUkExSXhDVEZHVUdTWU8wM1p6bkJRbVFiRnlsZy8zLzgrS2NFU0Z2aGJ0TllJY0M0MzFlWEgweGlYY0lBK0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Mzc5MzA5CWZpbGU6S2F2ZW4gR2l0XzAuMS4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMQpDemtzTHVCN3pvM1poL25JZ2NINjJBY1RNczhCTzZ1VllEUGVLd2VaZmRadE51TVZSNWIxa2xDekVyemVtZzZYcG5mdFE3R0MwSkdlWkt0a1RIZTdDdz09Cg==",
+            "url": "https://kaven.xyz:5558/hfs/pub/setup/Kaven-Git/0.1.1/Kaven%20Git_0.1.1_x64-setup.exe"
         }
     }
 }
