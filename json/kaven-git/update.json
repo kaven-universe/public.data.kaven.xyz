@@ -1,4 +1,5 @@
 {
     "schemaVersion": 1,
-    "updateBaseUrl": "ftp://kaven.xyz:5560/pub/setup/Kaven-Git/"
+    "updateBaseUrl": "ftp://kaven.xyz:5560/pub/setup/Kaven-Git/",
+    "downloadBaseUrl": "https://kaven.xyz:5558/hfs/pub/setup/Kaven-Git/"
 }
