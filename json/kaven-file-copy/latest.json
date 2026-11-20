@@ -1,0 +1,15 @@
+{
+  "version": "0.1.3",
+  "notes": "Adds signed automatic updates, integrated application menus, group selection controls, optional pre-run group confirmation, and per-file copy results.",
+  "pub_date": "2026-11-20T02:27:05.788Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRcm9RcUtSR1h6U3MrVlkvaWY4RXhta253TmlxanczUHFSL0w3L0ZXSHRaSEdnSDV3NXhRRmpkM0RHb2Z2b0NvM0MzU3g2R2x5bWtIL2o3TlNGWTc4WnhXb1MzMVEwcEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQxNjIzCWZpbGU6S2F2ZW4gRmlsZSBDb3B5XzAuMS4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMwozcVZGZVhEaXl3bVp4ME5rbExzRGlHc29yTldqVEZlZHVJeHNZeWtmWVVNcUthM3pycERjaklxVTFBczdDVWRzRERwM1lEMFQwZ1BrbHRpSUFWMlpEUT09Cg==",
+      "url": "https://github.com/kaven-universe/kaven-file-copy/releases/download/0.1.3/Kaven-File-Copy_0.1.3_x64-setup.exe"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRcm9RcUtSR1h6U3MrVlkvaWY4RXhta253TmlxanczUHFSL0w3L0ZXSHRaSEdnSDV3NXhRRmpkM0RHb2Z2b0NvM0MzU3g2R2x5bWtIL2o3TlNGWTc4WnhXb1MzMVEwcEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQxNjIzCWZpbGU6S2F2ZW4gRmlsZSBDb3B5XzAuMS4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMwozcVZGZVhEaXl3bVp4ME5rbExzRGlHc29yTldqVEZlZHVJeHNZeWtmWVVNcUthM3pycERjaklxVTFBczdDVWRzRERwM1lEMFQwZ1BrbHRpSUFWMlpEUT09Cg==",
+      "url": "https://github.com/kaven-universe/kaven-file-copy/releases/download/0.1.3/Kaven-File-Copy_0.1.3_x64-setup.exe"
+    }
+  }
+}

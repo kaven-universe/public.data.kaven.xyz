@@ -1,0 +1,11 @@
+{
+    "version": "0.1.0",
+    "notes": "Initial Kaven Git release.",
+    "pub_date": "2026-11-06T02:49:58Z",
+    "platforms": {
+        "windows-x86_64": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSlFaMmdhUElxWk9Eeng1TTVBd0tCamwxMXlhN1hOejRPL01sUmpaV043RjZLZ1o0UEpZWDV4NCt2UEI5Q1hqbDVxSkZlTGhqNENiR3drbVp5R0UwTndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzY2MDg2CWZpbGU6S2F2ZW4gR2l0XzAuMS4wX3g2NF9lbi1VUy5tc2kJdmVyc2lvbjowLjEuMAozZ2tjaUR6UzFKa2lqSU5RVEYwa1dUWnhpM05rTlNObUFrVWtla3U1TXMwcnRNK1dUeW91QXl5T2MvZ3BVdDB2czNRQVFURktoMmllSVY2N2NvdHFBQT09Cg==",
+            "url": "https://kaven.xyz:5558/hfs/pub/setup/Kaven-Git/0.1.0/Kaven%20Git_0.1.0_x64_en-US.msi"
+        }
+    }
+}

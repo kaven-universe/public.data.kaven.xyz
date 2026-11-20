@@ -1,0 +1,11 @@
+{
+  "latest": "0.1.3",
+  "versions": [
+    {
+      "version": "0.1.3",
+      "pub_date": "2026-11-20T02:27:05.788Z",
+      "notes": "Adds signed automatic updates, integrated application menus, group selection controls, optional pre-run group confirmation, and per-file copy results.",
+      "manifest_url": "https://public.data.kaven.xyz/json/kaven-file-copy/0.1.3.json"
+    }
+  ]
+}

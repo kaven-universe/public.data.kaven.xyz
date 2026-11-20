@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "notes": "Adds multi-window virtual desktop workflows, per-desktop repository restore, and localized tray controls.",
+    "pub_date": "2026-11-17T07:16:35Z",
+    "platforms": {
+        "windows-x86_64-nsis": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSmZRaTFhdWt0ZS9lN09qZmo4bGFLOWwwSk91QkhxWC9Zai9iTHN2akxNbkFnVXpqN0dXQ1FtU3pTRHhmZ1Rld1ZBejVjN2F4OVd2UU44WW5yMkErNHdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODk5NDk0CWZpbGU6S2F2ZW4gR2l0XzAuMi4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuMAovQ2lYNmF5SGZlNkZmQWhhWkJoeXRhVlB2MWU3aU1OVndzYVYyek04d2RURlJyckQrSUdBYjErUmpiS1B0WUorcHYxSkdZcWZJUUlCZTVKOE03QnJEdz09Cg==",
+            "url": "https://kaven.xyz:5558/hfs/pub/setup/Kaven-Git/0.2.0/Kaven%20Git_0.2.0_x64-setup.exe"
+        }
+    }
+}

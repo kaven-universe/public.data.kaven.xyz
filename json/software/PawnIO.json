@@ -1,0 +1,30 @@
+{
+	"Name": "PawnIO",
+	"Description": "Official PawnIO installer releases.",
+	"Icon": "https://github.com/namazso.png",
+	"Tags": [
+		"driver",
+		"windows",
+		"installer",
+		"utility"
+	],
+	"Versions": [
+		{
+			"Label": "2.2.0 (Latest)",
+			"Tags": [
+				"latest",
+				"stable",
+				"release"
+			],
+			"Links": [
+				{
+					"Platform": "Windows",
+					"File": "PawnIO_setup.exe",
+					"Date": "2026-03-15",
+					"Size": "3.25 MB",
+					"Url": "https://github.com/namazso/PawnIO.Setup/releases/latest/download/PawnIO_setup.exe"
+				}
+			]
+		}
+	]
+}

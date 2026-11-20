@@ -1,0 +1,81 @@
+  {
+    "Name": "FFmpeg",
+    "Description": "A complete, cross-platform solution to record, convert and stream audio and video.",
+    "Icon": "https://ffmpeg.org/favicon.ico",
+    "Tags": [
+      "video",
+      "audio",
+      "converter",
+      "cli",
+      "multimedia"
+    ],
+    "Versions": [
+      {
+        "Label": "6.1.1 (Stable)",
+        "Tags": [
+          "stable",
+          "release"
+        ],
+        "Links": [
+          {
+            "Platform": "Windows x64",
+            "File": "ffmpeg-release-essentials.zip",
+            "Date": "2025-01-15",
+            "Size": "80 MB",
+            "Url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip"
+          },
+          {
+            "Platform": "Windows Full (GPL)",
+            "File": "ffmpeg-release-full.7z",
+            "Date": "2025-01-15",
+            "Size": "120 MB",
+            "Url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z"
+          },
+          {
+            "Platform": "Linux x64 (Static)",
+            "File": "ffmpeg-release-amd64-static.tar.xz",
+            "Date": "2025-01-15",
+            "Size": "75 MB",
+            "Url": "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
+          },
+          {
+            "Platform": "macOS (Intel/Apple Silicon)",
+            "File": "ffmpeg.zip",
+            "Date": "2025-01-15",
+            "Size": "70 MB",
+            "Url": "https://evermeet.cx/ffmpeg/getrelease/zip"
+          }
+        ]
+      },
+      {
+        "Label": "6.1 (LTS)",
+        "Tags": [
+          "lts",
+          "legacy"
+        ],
+        "Links": [
+          {
+            "Platform": "Windows x64",
+            "File": "ffmpeg-6.1-essentials_build.zip",
+            "Date": "2024-11-10",
+            "Size": "78 MB",
+            "Url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-6.1-essentials_build.zip"
+          },
+          {
+            "Platform": "Linux x64 (Static)",
+            "File": "ffmpeg-6.1-amd64-static.tar.xz",
+            "Date": "2024-11-10",
+            "Size": "74 MB",
+            "Url": "https://johnvansickle.com/ffmpeg/releases/ffmpeg-6.1-amd64-static.tar.xz"
+          },
+          {
+            "Platform": "macOS",
+            "File": "ffmpeg-6.1.zip",
+            "Date": "2024-11-10",
+            "Size": "68 MB",
+            "Url": "https://evermeet.cx/ffmpeg/ffmpeg-6.1.zip"
+          }
+        ]
+      }
+    ]
+  }

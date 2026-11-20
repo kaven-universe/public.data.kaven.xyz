@@ -1,0 +1,17 @@
+{
+  "latest": "0.2.1",
+  "versions": [
+    {
+      "version": "0.2.1",
+      "pub_date": "2026-11-19T03:24:10.636Z",
+      "notes": "Standardizes runtime storage and installation paths, hardens update and persistence behavior, and updates the release toolchain.",
+      "manifest_url": "https://public.data.kaven.xyz/json/kaven-docker/0.2.1.json"
+    },
+    {
+      "version": "0.2.0",
+      "pub_date": "2026-11-18T03:36:14.269Z",
+      "notes": "Initial stable release with private registry management, image synchronization, signed updates, and configuration migration.",
+      "manifest_url": "https://public.data.kaven.xyz/json/kaven-docker/0.2.0.json"
+    }
+  ]
+}

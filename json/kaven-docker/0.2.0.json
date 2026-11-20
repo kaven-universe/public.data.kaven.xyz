@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "notes": "Initial stable release with private registry management, image synchronization, signed updates, and configuration migration.",
+    "pub_date": "2026-11-18T03:36:14.269Z",
+    "platforms": {
+        "windows-x86_64": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQnRTbEs2TVorOHNNemlYeUtuUWFNTGhOMnZyN0xJUUJydENkNzZRRi9lWmRvbTN4NDBrcFFXbnNRME9MbGE4ZHFWd2lNc0p5dmdhNG9BbDR5cWFBVVB2MnBzWDdISWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTcyOTcxCWZpbGU6S2F2ZW4gRG9ja2VyXzAuMi4wX3g2NC1zZXR1cC5leGUKUWFMNEpicmExMkZXZkNSK1dqRWp6MW51VUs1VWY1QXlMczM5c3QyUlBDTXpDaXp4TGI4MjRJYUd3RmJ4SjJ0VTNrZzBleWI1VEtsS2RjUlpOQnZuQ3c9PQo=",
+            "url": "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.0/Kaven-Docker_0.2.0_x64-setup.exe",
+            "urls": [
+                "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.0/Kaven-Docker_0.2.0_x64-setup.exe",
+                "https://api.github.com/repos/kaven-universe/kaven-docker/releases/assets/761742729"
+            ]
+        },
+        "windows-x86_64-nsis": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQnRTbEs2TVorOHNNemlYeUtuUWFNTGhOMnZyN0xJUUJydENkNzZRRi9lWmRvbTN4NDBrcFFXbnNRME9MbGE4ZHFWd2lNc0p5dmdhNG9BbDR5cWFBVVB2MnBzWDdISWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTcyOTcxCWZpbGU6S2F2ZW4gRG9ja2VyXzAuMi4wX3g2NC1zZXR1cC5leGUKUWFMNEpicmExMkZXZkNSK1dqRWp6MW51VUs1VWY1QXlMczM5c3QyUlBDTXpDaXp4TGI4MjRJYUd3RmJ4SjJ0VTNrZzBleWI1VEtsS2RjUlpOQnZuQ3c9PQo=",
+            "url": "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.0/Kaven-Docker_0.2.0_x64-setup.exe",
+            "urls": [
+                "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.0/Kaven-Docker_0.2.0_x64-setup.exe",
+                "https://api.github.com/repos/kaven-universe/kaven-docker/releases/assets/761742729"
+            ]
+        }
+    }
+}
