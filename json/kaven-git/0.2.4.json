@@ -1,0 +1,11 @@
+{
+    "version": "0.2.4",
+    "notes": "Improves large change-set workflows, transfer progress, and multi-window virtual-desktop behavior.",
+    "pub_date": "2026-11-19T08:15:12Z",
+    "platforms": {
+        "windows-x86_64-nsis": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSmRnUllIaU1GS1JyTjN6MUZ5NlNEZ093Q2xHSWd4MUI2eUtTTVZZbW5VUFVJcW9QcUI2YjRTWDBOa09hcTFyVitUOWwxektRSitCdmhFZWxiOHk4Ynd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc2MDAwCWZpbGU6S2F2ZW4gR2l0XzAuMi40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuNAoyR0NhNXRuc1kvYkFQRXNiUndDVHlpaEllSzBCRWg1Qm9GMmVTSTBLM3NUR1ByTmJoNUdMZlN6bHBjeWZ0dDh6TU5BcGxHeHpyU1doVENva0IvSU5BQT09Cg==",
+            "url": "https://github.com/kaven-universe/kaven-git/releases/download/v0.2.4/Kaven.Git_0.2.4_x64-setup.exe"
+        }
+    }
+}

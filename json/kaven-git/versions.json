@@ -1,0 +1,47 @@
+{
+    "latest": "0.2.5",
+    "versions": [
+        {
+            "version": "0.2.5",
+            "pub_date": "2026-11-24T09:22:19Z",
+            "notes": "Adds startup and workflow preferences, streamlines saved-input controls, improves Git output rendering, and updates audited Rust dependencies.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.2.5.json"
+        },
+        {
+            "version": "0.2.4",
+            "pub_date": "2026-11-19T08:15:12Z",
+            "notes": "Improves large change-set workflows, transfer progress, and multi-window virtual-desktop behavior.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.2.4.json"
+        },
+        {
+            "version": "0.2.3",
+            "pub_date": "2026-11-18T11:03:30Z",
+            "notes": "Adds selective configuration transfer, safer unpushed-commit editing, external-change refresh, and close-to-tray behavior.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.2.3.json"
+        },
+        {
+            "version": "0.2.2",
+            "pub_date": "2026-11-17T08:38:04Z",
+            "notes": "Replaces the withdrawn 0.2.1 installer and fixes the Windows multi-window deadlock.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.2.2.json"
+        },
+        {
+            "version": "0.2.0",
+            "pub_date": "2026-11-17T07:16:35Z",
+            "notes": "Adds multi-window virtual desktop workflows, per-desktop repository restore, and localized tray controls.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.2.0.json"
+        },
+        {
+            "version": "0.1.1",
+            "pub_date": "2026-11-11T06:41:49Z",
+            "notes": "Adds signed automatic updates.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.1.1.json"
+        },
+        {
+            "version": "0.1.0",
+            "pub_date": "2026-11-06T02:49:58Z",
+            "notes": "Initial Kaven Git release.",
+            "manifest_url": "https://public.data.kaven.xyz/json/kaven-git/0.1.0.json"
+        }
+    ]
+}

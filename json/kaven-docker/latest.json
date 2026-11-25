@@ -1,0 +1,23 @@
+{
+  "version": "0.2.1",
+  "notes": "Standardizes runtime storage and installation paths, hardens update and persistence behavior, and updates the release toolchain.",
+  "pub_date": "2026-11-19T03:24:10.636Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQnRTbEs2TVorOG9hTVlUd3BqWVRJbkFMWTdGdERDQ1NCUnRxd3pCdXlKYnhRV3ROYnp5ZW96WDBVVlZTWTV0WEVYSFNQS1dRQ0hjbWdqbkNidTdoUVhZRS9ENlZORHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU4NjQ3CWZpbGU6S2F2ZW4gRG9ja2VyXzAuMi4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuMQpQdkk5YlYrL1NYS0c1TE0xSkg5QjV3alZzOW53dE5EUnFLeFhndEVxZnBOMUJGL2lGT1l1bHk0Nzc4dWx4ditqZXA4bTYzdVozYVMreUt2eHllV0pCdz09Cg==",
+      "url": "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.1/Kaven-Docker_0.2.1_x64-setup.exe",
+      "urls": [
+        "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.1/Kaven-Docker_0.2.1_x64-setup.exe",
+        "https://api.github.com/repos/kaven-universe/kaven-docker/releases/assets/766042509"
+      ]
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUQnRTbEs2TVorOG9hTVlUd3BqWVRJbkFMWTdGdERDQ1NCUnRxd3pCdXlKYnhRV3ROYnp5ZW96WDBVVlZTWTV0WEVYSFNQS1dRQ0hjbWdqbkNidTdoUVhZRS9ENlZORHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU4NjQ3CWZpbGU6S2F2ZW4gRG9ja2VyXzAuMi4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuMQpQdkk5YlYrL1NYS0c1TE0xSkg5QjV3alZzOW53dE5EUnFLeFhndEVxZnBOMUJGL2lGT1l1bHk0Nzc4dWx4ditqZXA4bTYzdVozYVMreUt2eHllV0pCdz09Cg==",
+      "url": "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.1/Kaven-Docker_0.2.1_x64-setup.exe",
+      "urls": [
+        "https://github.com/kaven-universe/kaven-docker/releases/download/0.2.1/Kaven-Docker_0.2.1_x64-setup.exe",
+        "https://api.github.com/repos/kaven-universe/kaven-docker/releases/assets/766042509"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "version": "0.2.5",
+    "notes": "Adds startup and workflow preferences, streamlines saved-input controls, improves Git output rendering, and updates audited Rust dependencies.",
+    "pub_date": "2026-11-24T09:22:19Z",
+    "platforms": {
+        "windows-x86_64-nsis": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSmZ1NzgrTDNwKyszWkkvaDdPYjNWT2YwMVNUOWFGbzRCUzNpTEU3RzkxKzlJaUFNaklRekRZUWhsRFBWSXJIZ293R2VUSHJILzlsM1hEMHhIeW8vZ0FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEyMDU4CWZpbGU6S2F2ZW4gR2l0XzAuMi41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuNQpnM0NrUC9yOWdjQ3JpNVVxcE90REE4Nk1JdDE3SnVYMXJWQkhPTWphWnJUcVptR1dzNC9BSllKdEhtUHpFcXNLZ041KzNYNWt4L3lPaCtzTmxXNnJBdz09Cg==",
+            "url": "https://github.com/kaven-universe/kaven-git/releases/download/v0.2.5/Kaven.Git_0.2.5_x64-setup.exe"
+        }
+    }
+}

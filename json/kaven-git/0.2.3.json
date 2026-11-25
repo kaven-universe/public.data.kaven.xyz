@@ -1,0 +1,11 @@
+{
+  "version": "0.2.3",
+  "notes": "Adds selective configuration transfer, safer unpushed-commit editing, external-change refresh, and close-to-tray behavior.",
+  "pub_date": "2026-11-18T11:03:30Z",
+  "platforms": {
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTQURwN0dwUHdTSmVSa296MDZ0UDQ2djBCTFpzZUFzQmpZTEhSdDVVc1FFOVV5c1dQenhlOHB6NVJKeWRMNmM4bGVJTnorUlZXY0RwRTA5UTg0Qlh3c3dXQ1hKSjlGZmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTk5NzYyCWZpbGU6S2F2ZW4gR2l0XzAuMi4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuMwpPQ1BnNS9IUW4va1pncE1ITXROSFRJdXgvVmljK2V3RHZ5aE5VRWplR0l5bmdvaG1ERjNqMFV4Yk5TQjRvb0h3MTJQMFIzWFVRYjBqTUVSTXVnRmhEQT09Cg==",
+      "url": "https://github.com/kaven-universe/kaven-git/releases/download/v0.2.3/Kaven.Git_0.2.3_x64-setup.exe"
+    }
+  }
+}

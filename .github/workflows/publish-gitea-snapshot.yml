@@ -1,0 +1,149 @@
+name: Publish Gitea snapshot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+  pages: write
+
+concurrency:
+  group: publish-gitea-snapshot
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Clone Gitea source
+        shell: bash
+        env:
+          GITEA_REPOSITORY_URL: ${{ vars.GITEA_REPOSITORY_URL }}
+        run: |
+          set -Eeuo pipefail
+
+          if [[ -z "${GITEA_REPOSITORY_URL:-}" ]]; then
+            echo 'The GitHub repository variable GITEA_REPOSITORY_URL is not configured.' >&2
+            exit 1
+          fi
+
+          git clone --depth=1 "$GITEA_REPOSITORY_URL" source
+
+      - name: Publish snapshot and rebuild Pages
+        working-directory: source
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_URL: https://github.com/${{ github.repository }}.git
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -Eeuo pipefail
+
+          askpass_path="$(mktemp)"
+          trap 'rm -f "$askpass_path"' EXIT
+          printf '%s\n' \
+            '#!/usr/bin/env sh' \
+            'case "$1" in' \
+            '  *Username*) printf "%s\\n" "x-access-token" ;;' \
+            '  *Password*) printf "%s\\n" "$GH_TOKEN" ;;' \
+            'esac' \
+            > "$askpass_path"
+          chmod 700 "$askpass_path"
+
+          export GIT_ASKPASS="$askpass_path"
+          export GIT_TERMINAL_PROMPT=0
+
+          bash scripts/publish-github-snapshot.sh --force
+
+          curl --fail-with-body --silent --show-error --location \
+            --connect-timeout 20 \
+            --max-time 120 \
+            --retry 3 \
+            --retry-delay 10 \
+            --request POST \
+            --header 'Accept: application/vnd.github+json' \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header 'X-GitHub-Api-Version: 2022-11-28' \
+            "https://api.github.com/repos/$GH_REPOSITORY/pages/builds"
+
+      - name: Delete older workflow runs
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+          CURRENT_RUN_NUMBER: ${{ github.run_number }}
+          PUBLISH_SUCCEEDED: ${{ job.status == 'success' }}
+        run: |
+          set -Eeuo pipefail
+
+          workflow_file='publish-gitea-snapshot.yml'
+          old_run_ids_output="$(
+            gh api --paginate \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "repos/$GH_REPOSITORY/actions/workflows/$workflow_file/runs?per_page=100" \
+              --jq ".workflow_runs[] | select(.run_number < $CURRENT_RUN_NUMBER and .status == \"completed\") | .id"
+          )"
+          old_run_ids=()
+          if [[ -n "$old_run_ids_output" ]]; then
+            mapfile -t old_run_ids <<< "$old_run_ids_output"
+          fi
+
+          for run_id in "${old_run_ids[@]}"; do
+            gh api --method DELETE \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "repos/$GH_REPOSITORY/actions/runs/$run_id"
+          done
+
+          echo "Deleted ${#old_run_ids[@]} older snapshot workflow run(s)."
+
+          pages_workflow_path='dynamic/pages/pages-build-deployment'
+          pages_runs_url="repos/$GH_REPOSITORY/actions/runs?event=dynamic&per_page=100"
+          pages_run_number=''
+
+          if [[ "$PUBLISH_SUCCEEDED" == 'true' ]]; then
+            main_sha="$(gh api \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "repos/$GH_REPOSITORY/git/ref/heads/main" \
+              --jq '.object.sha')"
+
+            for attempt in {1..12}; do
+              pages_run_number="$(gh api \
+                --header 'X-GitHub-Api-Version: 2022-11-28' \
+                "$pages_runs_url" \
+                --jq "[.workflow_runs[] | select(.path == \"$pages_workflow_path\" and .head_sha == \"$main_sha\")][0].run_number // empty")"
+              if [[ -n "$pages_run_number" ]]; then
+                break
+              fi
+              sleep 5
+            done
+          fi
+
+          if [[ -z "$pages_run_number" ]]; then
+            pages_run_number="$(gh api \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "$pages_runs_url" \
+              --jq "[.workflow_runs[] | select(.path == \"$pages_workflow_path\")][0].run_number // empty")"
+          fi
+
+          old_pages_run_ids=()
+          if [[ -n "$pages_run_number" ]]; then
+            old_pages_run_ids_output="$(gh api --paginate \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "$pages_runs_url" \
+              --jq ".workflow_runs[] | select(.path == \"$pages_workflow_path\" and .run_number < $pages_run_number and .status == \"completed\") | .id")"
+            if [[ -n "$old_pages_run_ids_output" ]]; then
+              mapfile -t old_pages_run_ids <<< "$old_pages_run_ids_output"
+            fi
+          fi
+
+          for run_id in "${old_pages_run_ids[@]}"; do
+            gh api --method DELETE \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "repos/$GH_REPOSITORY/actions/runs/$run_id"
+          done
+
+          echo "Deleted ${#old_pages_run_ids[@]} older GitHub Pages workflow run(s)."
